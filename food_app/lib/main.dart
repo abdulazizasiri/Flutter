@@ -12,8 +12,16 @@ class MainStore extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
 
+
       appBar: AppBar(
-        // backgroundColor: Colors.transparent,
+        backgroundColor: Colors.transparent,
+        centerTitle: true,
+        title: Text("متجري", style: TextStyle(color: Colors.black),),
+        leading: Image.asset('assets/search.png'),
+        actions: [
+          Image.asset("assets/add.png"),
+          
+        ],
         // iconTheme: ,
       ),
 

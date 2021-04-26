@@ -43,6 +43,8 @@ flutter:
     - assets/zeyed.jpeg
     - assets/foul.jpeg
     - assets/grapeLeaves.jpeg
+    - assets/add.png
+    - assets/search.png
 
 
   # The following line ensures that the Material Icons font is
