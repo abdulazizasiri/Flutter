@@ -14,19 +14,35 @@ class MainStore extends StatelessWidget {
 
 
       appBar: AppBar(
-        backgroundColor: Colors.transparent,
+        backgroundColor: Color(0x44000000),
+        elevation: 0,
         centerTitle: true,
         title: Text("متجري", style: TextStyle(color: Colors.black),),
         leading: Image.asset('assets/search.png'),
         actions: [
           Image.asset("assets/add.png"),
-          
+
         ],
         // iconTheme: ,
       ),
 
-       resizeToAvoidBottomInset: false,
+       bottomNavigationBar:   BottomAppBar(
+         color: Color(0x44000000),
+         elevation: 0,
 
+         child:  Row(
+
+           mainAxisSize: MainAxisSize.max,
+           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+           children: <Widget>[
+             IconButton(icon: Icon(Icons.settings), onPressed: () {},),
+             IconButton(icon: Icon(Icons.info_sharp), onPressed: () {},),
+             IconButton(icon: Icon(Icons.link), onPressed: () {},),
+             IconButton(icon: Icon(Icons.home), onPressed: () {},),
+           ],
+         ),
+       ),
+       resizeToAvoidBottomInset: false,
 
       body: Container(
         decoration: BoxDecoration(
